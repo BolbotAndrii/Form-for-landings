@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => init());
 function init() {
 	load('https://code.jquery.com/jquery-3.5.1.js', () => {
-		load("form/intlTelInput/js/intlTelInput.js");
-		load('form/intlTelInput/js/utils.js');
+		load('form/lang.js');
 		load('form/form.js');
 		load('form/form-style.css');
 		console.log(("%c%s"), "color: red", "runtime.js: ready");
@@ -28,3 +27,5 @@ function load(url, callback) {
 
 	if (typeof res != "undefined") document.head.appendChild(res);
 }
+
+
