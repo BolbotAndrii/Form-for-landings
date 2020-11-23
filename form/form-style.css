@@ -1,0 +1,25 @@
+.ETform {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(0, 0, 0, .4);
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.send {
+	display: block;
+}
+
+.error {
+	background-color: rgb(255 0 59 / 79%);
+}
+
+input {
+	border: none;
+}
+
+input.error::placeholder {
+	color: #fff;
+}
