@@ -1,0 +1,30 @@
+const fields = [
+	{
+		"elem": "input",
+		"type": "text",
+		"name": "first-name",
+		"class": "",
+		"placeholder": "",
+	},
+	{
+		"elem": "input",
+		"type": "text",
+		"name": "last-name",
+		"class": "",
+		"placeholder": "",
+	},
+	{
+		"elem": "input",
+		"type": "email",
+		"name": "email",
+		"class": "",
+		"placeholder": "",
+	},
+	{
+		"elem": "input",
+		"type": "submit",
+		"name": "submit",
+		"class": "",
+		"value": "",
+	}
+]

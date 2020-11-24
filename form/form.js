@@ -46,12 +46,15 @@ for (let i = 0; i < formContainer.length; i++) {
 }
 
 
-$.get("http://ipinfo.io", (data) => {
-	window.lang = data.country;
-	
-}, 'json');
+setTimeout(() => {
+	$.get("http://ipinfo.io", (data) => {
+		window.lang = data.country;
+	}, 'json');
+	console.log(window.lang);
+}, 5000);
 
-console.log(window.lang);
+
+
 
 
 
