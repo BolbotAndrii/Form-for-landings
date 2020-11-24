@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => init());
 function init() {
 	load('https://code.jquery.com/jquery-3.5.1.js', () => {
+		load('form/form-fields.js');
 		load('form/lang.js');
 		load('form/form.js');
 		load('form/form-style.css');
