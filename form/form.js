@@ -1,18 +1,13 @@
 const formContainer = document.getElementsByClassName('ETform');
 
-
-
 const createHtmlElement = (data) => {
 	let htmlElement = document.createElement(data.elem);
 	htmlElement.type = data.type;
 	htmlElement.name = data.name;
-
-
-	// data.placeholder !== '' ? htmlElement.placeholder = data.placeholder.lang : '';
+	data.class !== '' && data.class !== undefined ? htmlElement.classList.add(data.class) : false;
 	data.type === 'submit' ? htmlElement.disabled = 'disabled' : '';
 	return htmlElement;
 }
-
 
 const createForm = (action, method, className, index, data) => {
 	let form = document.createElement('form');
@@ -20,7 +15,6 @@ const createForm = (action, method, className, index, data) => {
 	form.action = action;
 	form.classList.add(className);
 	formContainer[index].appendChild(form);
-
 	data.map(item => {
 		form.appendChild(createHtmlElement(item));
 	})

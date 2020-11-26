@@ -1,4 +1,4 @@
-const fields =[
+const fields = [
 
 	{
 		"elem": "input",
@@ -18,8 +18,7 @@ const fields =[
 		"elem": "input",
 		"type": "text",
 		"name": "last-name",
-		"class": ""
-		,
+		"class": "",
 		"placeholder": {
 			"en": "Last Name",
 			"de": "Vorname"
@@ -33,8 +32,7 @@ const fields =[
 		"elem": "input",
 		"type": "email",
 		"name": "email",
-		"class": ""
-		,
+		"class": "",
 		"placeholder": {
 			"en": "E-mail",
 			"de": "Vorname"
@@ -48,8 +46,7 @@ const fields =[
 		"elem": "input",
 		"type": "tel",
 		"name": "phone",
-		"class": ""
-		,
+		"class": "",
 		"placeholder": {
 			"en": "Phone number",
 			"de": "Telefonnummer"
@@ -93,7 +90,7 @@ const fields =[
 		"elem": "input",
 		"type": "submit",
 		"name": "submit",
-		"class": "",
+		"class": "ET_send_btn",
 		"value": "submit"
 	}
 
