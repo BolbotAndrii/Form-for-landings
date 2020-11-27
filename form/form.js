@@ -1,31 +1,44 @@
-const formContainer = document.getElementsByClassName('ETform');
+const formContainer = document.getElementsByClassName( 'ETform' );
 
-const createHtmlElement = (data) => {
+
+const createHtmlElement = ( data ) => {
 	let htmlElement = document.createElement(data.elem);
+	// default attr
 	htmlElement.type = data.type;
 	htmlElement.name = data.name;
-	data.class !== '' && data.class !== undefined ? htmlElement.classList.add(data.class) : false;
-	data.type === 'submit' ? htmlElement.disabled = 'disabled' : '';
+	// optional attr
+	data.placeholder !== undefined ? htmlElement.placeholder = data.placeholder.en : false; // todo multilanguage
+	data.class !== '' && data.class !== undefined ? htmlElement.classList.add( data.class ) : false;
+	data.type === 'submit' ? htmlElement.disabled = true : false;
+
 	return htmlElement;
 }
 
-const createForm = (action, method, className, index, data) => {
-	let form = document.createElement('form');
+const createForm = ( action, method, className, index, data ) => {
+	// create form containers
+	let form = document.createElement( 'form' );
+	let hiddenCont = document.createElement( 'div');
+	let pCont = document.createElement('span');
+
+	// create form attributes
 	form.method = method;
 	form.action = action;
-	form.classList.add(className);
-	formContainer[index].appendChild(form);
+	form.classList.add( className );
+	formContainer[index].appendChild( form );
+
+	// create and including form fields
 	data.map(item => {
-		form.appendChild(createHtmlElement(item));
+		 form.appendChild( createHtmlElement( item ));
 	})
 }
 
 
-
-for (let i = 0; i < formContainer.length; i++) {
-	createForm('form/post.php', 'post', 'ETform-' + i, i, fields);
+// gets form 
+for ( let i = 0; i < formContainer.length; i++ ) {
+	createForm( 'form/post.php', 'post', 'ETform-' + i, i, fields );
 }
 
+console.log(phone.en.index);
 
 
 // const errorEmptyField = (elem, validate) => {

@@ -21,7 +21,7 @@ const fields = [
 		"class": "",
 		"placeholder": {
 			"en": "Last Name",
-			"de": "Vorname"
+			"de": "LVorname"
 		},
 		"error": {
 			"en": "This is a required field",
@@ -35,7 +35,7 @@ const fields = [
 		"class": "",
 		"placeholder": {
 			"en": "E-mail",
-			"de": "Vorname"
+			"de": "E-mail"
 		},
 		"error": {
 			"en": "Please enter a valid email address",
@@ -47,9 +47,27 @@ const fields = [
 		"type": "tel",
 		"name": "phone",
 		"class": "",
-		"placeholder": {
-			"en": "Phone number",
-			"de": "Telefonnummer"
+		"valid": {
+			"en": {
+				"index": "+1",
+				"length": "8",
+				"flag": "images/en.jpg"
+			},
+			"ua": {
+				"index": "+3",
+				"length": "8",
+				"flag": "images/ua.jpg"
+			},
+			"pl": {
+				"index": "+5",
+				"length": "8",
+				"flag": "images/pl.jpg"
+			},
+			"ru": {
+				"index": "+4",
+				"length": "8",
+				"flag": "images/ru.jpg"
+			}
 		},
 		"error": {
 			"en": "Please enter a valid email address",
