@@ -2,114 +2,130 @@ const fields = [
 
 	{
 		"elem": "input",
-		"type": "text",
-		"name": "first-name",
-		"class": "",
-		"placeholder": {
-			"en" : "First Name",
-			"de" :  "Vorname"
-		},
-		"error": {
-			"en": "This is a required field",
-			"de": "Das ist ein Pflichtfeld"
-		}
-	},
-	{
-		"elem": "input",
-		"type": "text",
-		"name": "last-name",
-		"class": "",
-		"placeholder": {
-			"en": "Last Name",
-			"de": "LVorname"
-		},
-		"error": {
-			"en": "This is a required field",
-			"de": "Das ist ein Pflichtfeld"
-		}
-	},
-	{
-		"elem": "input",
-		"type": "email",
-		"name": "email",
-		"class": "",
-		"placeholder": {
-			"en": "E-mail",
-			"de": "E-mail"
-		},
-		"error": {
-			"en": "Please enter a valid email address",
-			"de": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
-		}
-	},
-	{
-		"elem": "input",
-		"type": "tel",
-		"name": "phone",
-		"class": "",
-		"valid": {
-			"en": {
-				"index": "+1",
-				"length": "8",
-				"flag": "images/en.jpg"
+		"attr": {
+			"type": "text",
+			"name": "first-name",
+			"class": "",
+			"placeholder": {
+				"ua": "Ім'я",
+				"en": "First Name",
+				"gb": "First Name",
+				"de": "Vorname"
 			},
-			"ua": {
-				"index": "+3",
-				"length": "8",
-				"flag": "images/ua.jpg"
-			},
-			"pl": {
-				"index": "+5",
-				"length": "8",
-				"flag": "images/pl.jpg"
-			},
-			"ru": {
-				"index": "+4",
-				"length": "8",
-				"flag": "images/ru.jpg"
+			"error": {
+				"ua": "Поле є обов'язковим",
+				"en": "This is a required field",
+				"gb": "This is a required field",
+				"de": "Das ist ein Pflichtfeld"
 			}
-		},
-		"error": {
-			"en": "Please enter a valid email address",
-			"de": "Bitte geben Sie eine gültige Telefonnummer ein"
+		}
+		
+	},
+	{
+		"elem": "input",
+		"attr": {
+			"type": "text",
+			"name": "last-name",
+			"class": "",
+			"placeholder": {
+				"ua": "Прізвище",
+				"en": "Last Name",
+				"gb": "Last Name",
+				"de": "LVorname"
+			},
+			"error": {
+				"ua": "Поле є обов'язковим",
+				"en": "This is a required field",
+				"gb": "This is a required field",
+				"de": "Das ist ein Pflichtfeld"
+			}
 		}
 	},
 	{
 		"elem": "input",
-		"type": "hidden",
-		"name": "full-phone"
+		"attr": {
+			"type": "email",
+			"name": "email",
+			"class": "",
+			"placeholder": {
+				"ua": "E-mail",
+				"en": "E-mail",
+				"gb": "E-mail",
+				"de": "E-mail"
+			},
+			"error": {
+				"ua": "Будь-ласка введіть коректний email",
+				"en": "Please enter a valid email address",
+				"gb": "Please enter a valid email address",
+				"de": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+			}
+		}
 	},
 	{
 		"elem": "input",
-		"type": "hidden",
-		"name": "t1"
+		"attr": {
+			"type": "tel",
+			"name": "phone",
+			"class": "phone-field",
+			"error": {
+				"ua": "Будь-ласка введіть коректний номер телефона",
+				"en": "Please enter a valid phone number",
+				"gb": "Please enter a valid phone number",
+				"de": "Bitte geben Sie eine gültige Telefonnummer ein"
+			}
+		}
 	},
 	{
 		"elem": "input",
-		"type": "hidden",
-		"name": "px"
+		"attr": {
+			"type": "hidden",
+			"name": "full-phone"
+		}
 	},
 	{
 		"elem": "input",
-		"type": "hidden",
-		"name": "sub1"
+		"attr": {
+			"type": "hidden",
+			"name": "t1"
+		}
 	},
 	{
 		"elem": "input",
-		"type": "hidden",
-		"name": "sub2"
+		"attr": {
+			"type": "hidden",
+			"name": "px"
+		}
 	},
 	{
 		"elem": "input",
-		"type": "hidden",
-		"name": "country"
+		"attr": {
+			"type": "hidden",
+			"name": "sub1"
+		}
 	},
 	{
 		"elem": "input",
-		"type": "submit",
-		"name": "submit",
-		"class": "ET_send_btn",
-		"value": "submit"
+		"attr": {
+			"type": "hidden",
+			"name": "sub2"
+		}
+	},
+	{
+		"elem": "input",
+		"attr": {
+			"type": "hidden",
+			"name": "country"
+		}
+	},
+	{
+		"elem": "input",
+		"attr": {
+			"type": "submit",
+			"name": "submit",
+			"class": "ET_send_btn",
+			"value": "submit",
+			"disabled": "true"
+		}
 	}
 
 ]
